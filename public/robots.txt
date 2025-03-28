@@ -1,0 +1,49 @@
+# robots.txt for [Lunon Demo]
+Website: demo.lunon.com
+
+# === Default Rules for All Crawlers ===
+User-agent: *
+
+# Allow crawling of the root and everything else by default.
+# The absence of a "Disallow: /" means everything is allowed unless specified otherwise.
+# No need for explicit "Allow: /" unless you have broader disallows.
+
+# --- Disallowed Paths ---
+
+# Disallow crawling of API endpoints.
+# Crawlers shouldn't try to execute backend API calls.
+Disallow: /api/
+
+# Disallow crawling of Nuxt.js internal build/asset directories.
+# These don't contain user-facing content pages.
+Disallow: /_nuxt/
+
+# Add any other specific directories or files you want to block.
+# Examples (uncomment and adapt if needed):
+# Disallow: /admin/       # Example: Block an admin section
+# Disallow: /private/     # Example: Block private user areas
+# Disallow: /temp/        # Example: Block temporary files/folders
+# Disallow: /*?           # Example: Block URLs with query parameters if they cause duplicate content issues (use cautiously)
+
+
+# --- Allowed Assets (Usually Implicit) ---
+# Most crawlers (especially Google) need CSS, JS, and Image files to render pages correctly.
+# As long as these aren't under a disallowed path (like /api/ or /_nuxt/),
+# they are allowed by default. No explicit "Allow" directives are typically needed for standard assets.
+# Example: Your .png and .svg files will be allowed.
+
+
+# === Sitemap Location ===
+# Provide the full URL to your sitemap file. This helps crawlers discover all your important pages.
+# You will need to generate and upload this sitemap.xml file separately.
+Sitemap: https://demo.lunon.com/sitemap.xml
+
+# === Specific Crawler Rules (Optional) ===
+# You can add rules for specific bots if needed, but the '*' usually suffices.
+# Example:
+# User-agent: Googlebot
+# Allow: / # Example: Explicitly allow Googlebot everything (redundant if '*' allows it)
+# Crawl-delay: 1 # Example: Slow down Googlebot (use cautiously)
+
+# User-agent: Bingbot
+# Disallow: /some-bing-specific-path/

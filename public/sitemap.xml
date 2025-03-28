@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://demo.lunon.com/</loc>
+    <lastmod>2025-03-28</lastmod> <!-- Optional: Update with the actual last modification date (YYYY-MM-DD) -->
+    <changefreq>daily</changefreq> <!-- Optional: How often the page might change (always, hourly, daily, weekly, monthly, yearly, never) -->
+    <priority>1.0</priority>      <!-- Optional: Priority relative to other pages (0.0 to 1.0). For a single page, 1.0 is fine. -->
+  </url>
+</urlset>

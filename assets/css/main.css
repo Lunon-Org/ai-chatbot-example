@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+    @apply bg-black text-white font-sans;
+}
+
+:root {
+    --font-sans: "Instrument Sans", sans-serif;
+}
